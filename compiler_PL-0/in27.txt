@@ -1,0 +1,2 @@
+const m = 8;
+begin end. write m;

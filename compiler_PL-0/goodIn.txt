@@ -1,0 +1,10 @@
+const MAX = 21;
+var x;
+begin
+	x := 0;
+	while x < MAX
+	do begin
+		if x <= (MAX / 3) then x := x + 1 else x := x + 2;
+		write x;
+	end
+end.

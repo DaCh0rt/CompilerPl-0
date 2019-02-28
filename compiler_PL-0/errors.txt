@@ -1,0 +1,425 @@
+
+Source Program:in1.txt
+var x;
+begin
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	x := 0;
+	
+end.
+
+parsing ERROR 1: maximum assembly code length reached, input file is too long.
+
+Source Program:in2.txt
+var x;
+x := y;
+.
+
+parsing ERROR 2: undeclared variable y.
+
+Source Program:in3.txt
+var x;
+x := 1 + (2 + 3;
+.
+
+parsing ERROR 3: expected closing parenthesis around expression.
+
+Source Program:in4.txt
+var x;
+x := read;
+.
+
+parsing ERROR 4: expected number or variable in Expression.
+
+Source Program:in5.txt
+var x;
+if 1 + 2 then read x;
+.
+
+
+parsing ERROR 5: expected relational symbol in condition statement.
+
+Source Program:in6.txt
+x := 2;
+.
+
+parsing ERROR 6: undeclared variable x.
+
+Source Program:in7.txt
+var x;
+x = 2;
+.
+
+parsing ERROR 7: expected ':=' instead of '=' following identifier in statement.
+
+Source Program:in8.txt
+var x;
+x 2;
+.
+
+parsing ERROR 8: expected ':=' after identifier in statement.
+
+Source Program:in9.txt
+begin.
+
+parsing ERROR 9: expected 'end' after begin symbol.
+
+Source Program:in10.txt
+if 1 > 2 3;
+.
+
+parsing ERROR 10: expected 'then' following if condition.
+
+Source Program:in11.txt
+while 1 > 2 4;
+.
+
+parsing ERROR 11: expected 'do' following while condition.
+
+Source Program:in12.txt
+var x;
+begin
+	x := 0;
+	read;
+end.
+
+parsing ERROR 12: expected identifier following read.
+
+Source Program:in13.txt
+read x;
+.
+
+parsing ERROR 13: undeclared variable x.
+
+Source Program:in14.txt
+const a=0;
+a := 1
+.
+
+parsing ERROR 14: assignment to constant.
+
+Source Program:in15.txt
+var f, n;
+procedure fact;
+	var ans1;
+	begin
+		ans1:=n;
+ 		n:= n-1;
+ 		if n = 0 then f := 1;
+ 		if n > 0 then call fact;
+ 		f:=f*ans1;
+	end;
+begin
+	n:=3;
+	call;
+	write f
+end.
+
+
+parsing ERROR 15: expected procedure name after call symbol.
+
+Source Program:in16.txt
+const 2;
+.
+
+parsing ERROR 16: expected identifier after constant declaration.
+
+Source Program:in17.txt
+const x 2;
+.
+
+parsing ERROR 17: expected '=' after identifier.
+
+Source Program:in18.txt
+const x = y;
+.
+
+parsing ERROR 18: expected integer after equal symbol in constant declaration.
+
+Source Program:in19.txt
+const a = 2
+.
+
+parsing ERROR 19: expeced constant declaration to end with ';'.
+
+Source Program:in20.txt
+var
+.
+
+parsing ERROR 20: expected identifier after variable declaration.
+
+Source Program:in21.txt
+var x
+.
+
+parsing ERROR 21: expected variable declaration to end with ';'.
+
+Source Program:in22.txt
+var x;
+
+parsing ERROR 22: expected '.' to end program.
+
+Source Program:in23.txt
+var xkljdfgdgjkljkl34jkl345;
+.
+
+Error 23: Identifier too long.
+
+Source Program:in24.txt
+var x;
+x = 2000000000000000000000000;
+.
+
+Error 24: Number too large.
+
+Source Program:in25.txt
+var 1x;
+.
+
+Error 25: Invalid identifier.
+
+Source Program:in26.txt
+var %;
+.
+
+Error 26: Invalid symbol.
+
+Source Program:in27.txt
+const m = 8;
+begin end. write m;
+
+parsing ERROR 27: tokens after program end.
+
+Source Program:in28.txt
+call a
+.
+
+parsing ERROR 28: undeclared procedure a.
+
+Source Program:in29.txt
+var a;
+call a
+.
+
+parsing ERROR 29: a is not a procedure.
+
+Source Program:in30.txt
+var x,y,z,v,w;
+procedure a;
+  var x,y,u,v;
+  procedure b;
+    var y,z,v;
+    procedure c;
+      var y,z;
+      begin
+        z:=1;
+        x:=y+z+w
+      end;
+    begin
+      y:=x+u+w;
+      call c
+    end;
+  begin
+    z:=2;
+    u:=z+w;
+    call c
+  end;
+begin
+  x:=1; y:=2; z:=3; v:=4; w:=5;
+  x:=v+w;
+  write z;
+  call a;
+end.
+
+
+parsing ERROR 30: procedure c is not in the scope.
+
+Source Program:in31.txt
+procedure
+.
+
+parsing ERROR 31: expected identifier after procedure declaration.
+
+Source Program:in32.txt
+var x,y,z,v,w;
+procedure a
+  var x,y,u,v;
+  procedure b;
+    var y,z,v;
+    procedure c;
+      var y,z;
+      begin
+        z:=1;
+        x:=y+z+w
+      end;
+    begin
+      y:=x+u+w;
+      call c
+    end;
+  begin
+    z:=2;
+    u:=z+w;
+    call b
+  end;
+begin
+  x:=1; y:=2; z:=3; v:=4; w:=5;
+  x:=v+w;
+  write z;
+  call a;
+end.
+
+
+parsing ERROR 32: expected ';' after procedure declaration.
+
+Source Program:in33.txt
+var x,y,z,v,w;
+procedure a;
+  var x,y,u,v;
+  procedure b;
+    var y,z,v;
+    procedure c;
+      var y,z;
+      begin
+        z:=1;
+        x:=y+z+w
+      end;
+    begin
+      y:=x+u+w;
+      call c
+    end;
+  begin
+    z:=2;
+    u:=z+w;
+    call b
+  end
+begin
+  x:=1; y:=2; z:=3; v:=4; w:=5;
+  x:=v+w;
+  write z;
+  call a;
+end.
+
+
+parsing ERROR 33: expected ';' after block in procedure.

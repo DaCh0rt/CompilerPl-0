@@ -1,0 +1,20 @@
+const MAX = 200;
+var x,y;
+begin
+	x := 1;
+	while x <= MAX
+	do begin
+		y := 2;
+		while y < x
+		do begin
+			if x - (x / y * y) = 0 then
+				begin
+					y := x;
+				end
+			else
+				if x = y + 1 then write x;
+			y := y + 1;
+		end;
+		x := x + 1;
+	end;
+end.

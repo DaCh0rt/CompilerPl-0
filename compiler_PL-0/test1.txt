@@ -1,0 +1,6 @@
+var x,y;
+begin
+	x := 4;
+	y := 2;
+	if x - (x/y*y) = 0 then write x else write y;
+end.
